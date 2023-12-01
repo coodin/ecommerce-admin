@@ -11,7 +11,7 @@ import { getStockCount } from "@/actions/get-stock-count";
 import { getGraphRevenue } from "@/actions/get-grap-revenue";
 import Overview from "@/components/overview";
 
-const DasboardPage = async (params: { storeId: string }) => {
+const DasboardPage = async ({ params }: { params: { storeId: string } }) => {
   const totalRevenue = await getTotalRevenue(params.storeId);
   const salesCount = await getSalesCount(params.storeId);
   const stockCount = await getStockCount(params.storeId);

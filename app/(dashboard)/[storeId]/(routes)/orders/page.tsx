@@ -4,7 +4,7 @@ import BillboardClient from "./components/client";
 import { OrderColumn } from "./components/colums";
 import { formatter } from "@/lib/utils";
 
-const OrdersPage = async (params: { storeId: string }) => {
+const OrdersPage = async ({ params }: { params: { storeId: string } }) => {
   const orders = await prismadb.order.findMany({
     where: {
       storeId: params.storeId,

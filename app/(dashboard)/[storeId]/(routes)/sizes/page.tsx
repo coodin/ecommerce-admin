@@ -4,7 +4,7 @@ import { format } from "date-fns";
 import SizesClient from "./components/client";
 import { SizesColum } from "./components/colums";
 
-const SizesPage = async (params: { storeId: string }) => {
+const SizesPage = async ({ params }: { params: { storeId: string } }) => {
   const sizes = await prismadb.size.findMany({
     where: {
       storeId: params.storeId,
