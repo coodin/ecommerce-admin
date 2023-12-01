@@ -249,7 +249,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
               name="sizeId"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Category</FormLabel>
+                  <FormLabel>Size</FormLabel>
                   <Select
                     disabled={loading}
                     onValueChange={field.onChange}
