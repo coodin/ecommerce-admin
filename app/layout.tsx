@@ -21,6 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   //const store = prismadb.store.create()
+  // console.log(`OTHER ENVİRONMENT VARIABLE ${process.env.NODE_ENV}`);
+
   return (
     <ClerkProvider>
       <html lang="en">
